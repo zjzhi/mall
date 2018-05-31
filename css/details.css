@@ -1,0 +1,215 @@
+@charset "UTF-8";
+#nav .nav_list {
+  display: none; }
+
+#main .main_top {
+  width: 100%;
+  height: 616px; }
+  #main .main_top h2 {
+    display: block;
+    height: 44px; }
+  #main .main_top .mt_l {
+    width: 406px;
+    height: 562px;
+    position: relative; }
+    #main .main_top .mt_l h3 {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      color: #A5B2B2;
+      font-size: 12px; }
+      #main .main_top .mt_l h3 i {
+        color: #FEA627;
+        font-size: 18px;
+        margin: 0 5px; }
+  #main .main_top .mt_r {
+    width: 734px;
+    height: 562px;
+    font-size: 12px;
+    color: #666;
+    position: relative;
+    padding-left: 50px; }
+    #main .main_top .mt_r .erweima {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    #main .main_top .mt_r .title {
+      font-size: 16px;
+      height: 16px;
+      margin: 10px 0;
+      color: #333; }
+    #main .main_top .mt_r .pro {
+      color: #FF6600;
+      height: 34px;
+      border-bottom: 1px dashed #ccc; }
+    #main .main_top .mt_r .price span {
+      font-size: 24px;
+      color: #FF6600; }
+    #main .main_top .mt_r .price span:before {
+      content: '￥'; }
+    #main .main_top .mt_r .price div {
+      display: inline-block;
+      background: #FF6600;
+      color: #fff;
+      margin-left: 5px;
+      margin-right: 30px;
+      padding: 3px; }
+    #main .main_top .mt_r .price i {
+      margin: 0 5px; }
+    #main .main_top .mt_r .price del {
+      margin-right: 100px; }
+    #main .main_top .mt_r .price del:before {
+      content: '￥'; }
+    #main .main_top .mt_r .cuxiao {
+      width: 673px;
+      height: 148px;
+      background: url(../img/detailcuxiao.png) no-repeat; }
+    #main .main_top .mt_r .bianhao {
+      display: block;
+      line-height: 35px;
+      border-bottom: 1px dashed #ccc;
+      height: 35px;
+      width: 673px; }
+      #main .main_top .mt_r .bianhao span {
+        vertical-align: top;
+        display: inline-block;
+        width: 100px;
+        height: 35px; }
+    #main .main_top .mt_r .checkgood ul {
+      margin-top: 16px; }
+      #main .main_top .mt_r .checkgood ul li {
+        float: left;
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        border: 1px solid #ccc; }
+        #main .main_top .mt_r .checkgood ul li img {
+          width: 68px; }
+      #main .main_top .mt_r .checkgood ul li:first-child {
+        border: 0 none; }
+    #main .main_top .mt_r .attr .attr_l {
+      width: 68px;
+      height: 115px; }
+    #main .main_top .mt_r .attr .attr_r {
+      width: 630px;
+      height: 115px;
+      position: relative; }
+      #main .main_top .mt_r .attr .attr_r ul {
+        margin: 10px 0; }
+        #main .main_top .mt_r .attr .attr_r ul li {
+          height: 25px;
+          margin-bottom: 5px; }
+          #main .main_top .mt_r .attr .attr_r ul li span:first-child {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 56px;
+            height: 25px;
+            background: #90C31F;
+            border-radius: 5px;
+            padding: 5px;
+            color: #fff;
+            text-align: center; }
+          #main .main_top .mt_r .attr .attr_r ul li label {
+            vertical-align: top;
+            display: inline-block;
+            border: 1px solid #ccc;
+            width: 56px;
+            height: 23px;
+            text-align: center;
+            line-height: 25px;
+            border-right: 0 none; }
+          #main .main_top .mt_r .attr .attr_r ul li span:nth-child(5) {
+            vertical-align: top;
+            display: inline-block;
+            width: 32px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid #ccc; }
+          #main .main_top .mt_r .attr .attr_r ul li i {
+            vertical-align: top;
+            display: inline-block;
+            width: 22px;
+            height: 23px;
+            background: #F3F3F3;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid #ccc; }
+          #main .main_top .mt_r .attr .attr_r ul li a {
+            color: #333333;
+            margin-left: 50px; }
+            #main .main_top .mt_r .attr .attr_r ul li a i {
+              color: #90C31F;
+              background: #fff;
+              border: 0 none;
+              font-size: 18px; }
+      #main .main_top .mt_r .attr .attr_r button {
+        width: 150px;
+        height: 35px;
+        border-radius: 5px;
+        background: #FF6600;
+        margin-right: 10px;
+        font-size: 18px;
+        color: #fff; }
+      #main .main_top .mt_r .attr .attr_r button:nth-child(3) {
+        background: #fff;
+        border: 1px solid #FF6600;
+        color: #FF6600; }
+        #main .main_top .mt_r .attr .attr_r button:nth-child(3) i {
+          margin-right: 10px; }
+      #main .main_top .mt_r .attr .attr_r .guangdu {
+        border: 1px solid #ccc;
+        background: #fff;
+        position: absolute;
+        left: 99px;
+        top: 36px;
+        display: none; }
+        #main .main_top .mt_r .attr .attr_r .guangdu ul {
+          width: 336px;
+          height: 180px;
+          margin: 0 auto; }
+          #main .main_top .mt_r .attr .attr_r .guangdu ul li {
+            width: 40px;
+            height: 30px;
+            border: 1px solid #ccc;
+            float: left;
+            margin: 3px;
+            text-align: center;
+            line-height: 30px; }
+
+#main .main_l {
+  width: 210px;
+  min-height: 400px; }
+
+#main .main_r {
+  width: 970px;
+  min-height: 400px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #666; }
+  #main .main_r ul {
+    background: #ccc;
+    border: 1px solid #D6CEC2; }
+    #main .main_r ul li {
+      background: #fff;
+      color: #333;
+      float: left;
+      padding: 0 35px;
+      height: 34px;
+      line-height: 34px;
+      border-right: 1px solid #ccc; }
+  #main .main_r .notice {
+    box-sizing: border-box;
+    width: 888px;
+    height: 74px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 24px; }
+    #main .main_r .notice span {
+      color: #000;
+      font-weight: bold; }
+    #main .main_r .notice a {
+      color: #90C31F; }
+  #main .main_r .xiangqing img {
+    width: 100%; }

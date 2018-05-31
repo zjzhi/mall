@@ -1,0 +1,9 @@
+#过滤node_modules
+js/node_modules/
+#过滤img
+img/
+#过滤git内文件
+.git/
+#过滤所有.zip文件
+*.zip
+.font-awesome/

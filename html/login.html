@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/base.css" />
+        <link rel="stylesheet" href="../css/login.css" />
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+        <script src="../js/require.js" data-main="../js/base"></script>  
+    </head>
+    <body>
+    <zTop></zTop>
+    <div id="yemei">
+        <div class="container">
+            <img src="../img/logo1.png" height="97" width="210"/>
+            <span>欢迎登录或注册</span>
+            <p>为确保您账户的安全及正常使用，依《网络安全法》相关要求，即日起会员账户需绑定手机号，若提示账号已存在可尝试重置密码等操作后再次登录，如您还未绑定，请尽快完成，感谢您的理解与支持！</p>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">
+            <div class="loginin">
+                <h2><span class="denglu">登录</span><span class="zhuce">注册</span></h2>
+                <div class="dengluList">
+                    <input type="text" class="uname" placeholder="请输入你的手机、邮箱、用户名"/>
+                    <input type="password" class="upassword" placeholder="请输入你的密码"/><br/>
+                    <input type="checkbox" id="uname" /><label for="uname">记住帐号</label>
+                    <input type="checkbox" id="upassword" /><label for="upassword">记住密码</label>
+                    <a href="#">？忘记密码</a><br/>
+                    <button>登录</button> 
+                    <h3><a href="#">立刻注册<i class="fa fa-hand-o-right"></i></a></h3>
+                </div>
+                <div class="zhuceList">
+                    <input type="text" placeholder="请输入你的手机号" class="uname" title="手机号码" />
+                     <input type="text" placeholder="请输入验证码"/ class="yanzhengma"><span></span>
+                    <input type="password" placeholder="字母开头,限字母数字下划线6-32字符" class="upassword" title="用户密码"/><br/>
+                    <input type="checkbox" id="uread" /><label for="uread">我已阅读并同意</label>
+                    <a href="#">《可得用户注册协议》</a><br/>
+                    <i class="error"></i><br />     
+                    <button>立即注册</button> 
+                    <h3><a href="#">立刻登录<i class="fa fa-hand-o-right"></i></a></h3>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <zFoodter></zFoodter>
+    </body>
+</html>
