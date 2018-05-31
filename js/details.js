@@ -9,10 +9,6 @@
         setTimeout(function(){$('.nav_list').hide();}, 500);
     });
 
-    
-
-
-
     //获取商品id
     var arr = ((location.search).slice(1)).split('&');
     var obj ={};
@@ -95,6 +91,44 @@
                $(this).next('span').text($tx);
             })
 
+
+            //设置点击按钮加入购物车
+            $('.addToCart').on('click',function(){
+                let $zuoyanNum = $('.zuoyanNum').text();
+                let $youyanNum = $('.youyanNum').text();
+                let $zuoyanG =$('lab_l').text();
+                let $youyanG =$('lab_r').text();
+                console.log($zuoyanG);
+                $.ajax({
+                    type:"get",
+                    url: "http://localhost:868/src/api/add.php",
+                    data:{
+                        id:$goodId,
+                        eyel:$zuoyanG,
+                        eyer:$youyanG,
+                        num :$zuoyanNum
+                    },
+                    success: function(data) {
+                        console.log(data);
+                    }
+                });
+                var body = document.getElementsByTagName('body')[0];
+                var flyImg = document.createElement('img');
+                flyImg.src = $dtlist[0].img;
+                flyImg.classList.add('dingwei');
+                flyImg.style.left = 300 +'px';
+                flyImg.style.top = $('.mt_r')[0].offsetTop +'px';
+                body.appendChild(flyImg);
+
+                var left = flyImg.offsetLeft;
+                var top = flyImg.offsetTop;
+                var gouwuCar = document.querySelector('.pu');
+                
+                animate(flyImg,{left:900,top:20,width:0,height:0},function(){
+                    body.removeChild(flyImg); 
+
+                });
+            });
         }
     });
 })

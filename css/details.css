@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.dingwei {
+  position: absolute; }
+
 #nav .nav_list {
   display: none; }
 

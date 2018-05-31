@@ -32,7 +32,7 @@ define(['jquery'],function($,html){
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="cart.html">
                                         <i class="fa fa-shopping-cart "></i>
                                         购物车
                                         

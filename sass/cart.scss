@@ -1,0 +1,85 @@
+#main{
+    .container{
+        width: 998px;
+        .cartLogo{
+        background:url(../img/cart.png) no-repeat;
+        width: 100%;
+        height: 128px;
+        }
+        div{
+            .cartList{
+                text-align:center;
+                font-size:12px;
+                color:#666;
+                height: 120px;
+                thead{
+                    tr{
+                        border:1px solid #ccc;
+                        height: 30px;
+                        background:#F9F9F9;
+                    }
+                }
+                tbody{
+                    border:1px solid #ccc;
+                    tr{
+                        border-bottom:1px solid #ccc;
+                        td{
+                            // display:inline-block;
+                            height: 120px;
+                        }
+                        
+                    
+                        td:first-child{
+                            width: 65px;
+                            img{
+                                width: 65px;
+                                margin-left:10px;
+                            }
+                        }
+                        td:nth-child(2){
+                            width:368px;
+                        }
+                        td:nth-child(3){
+                            width: 120px;
+                            span{
+                                margin:18px 0;
+                                display:inline-block;
+                                width: 48px;
+                            }
+                        }
+                        td:nth-child(4){
+                            width: 145px;
+
+                            span{
+                                margin:18px 0;
+                                display:inline-block;
+                                width: 18px;
+                                
+                            }
+                            i{
+                                display:inline-block;
+                                width: 22px;
+                                height: 22px;
+                                background:#EEEEEE;
+                                text-align:center;
+                                line-height:22px;
+                            }
+                        }
+                        td:nth-child(5){
+                            width: 104px;
+                        }
+                        td:nth-child(6){
+                            width: 162px;
+                        }
+                        td:nth-child(7){
+                            width: 98px;
+                        }
+                    }
+                }
+
+                    
+            }
+                
+        }
+    }
+}

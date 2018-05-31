@@ -235,7 +235,7 @@
             $list_top.map(function(item){
                 let $imgsrc = item.img.slice(3);
                 let $name = item.name.slice(0,12);
-                str+=`<li data-id=${item.id} class="lists">
+                str+=`<li data-id=${item.id} class="list">
                             <img src="${$imgsrc}"/>
                             <p>${$name}</p>
                             <span>${item.sale}</span><del>${item.prices}</del>
@@ -249,7 +249,7 @@
             $goodslist.map(function(item){
                 let $imgsrc = item.img.slice(3);
                 let $name = item.name.slice(0,12);
-                str1+=`<li data-id=${item.id} class="lists"><img src="${$imgsrc}"/><p>${item.sale}</p><h5>${$name}</h5><h6>积分可抵扣10元</h6></li>`;
+                str1+=`<li data-id=${item.id} class="list"><img src="${$imgsrc}"/><p>${item.sale}</p><h5>${$name}</h5><h6>积分可抵扣10元</h6></li>`;
             }).join('\n');
             
             $('.c1f_r ul').html(str1);
@@ -259,11 +259,11 @@
             let $list_bot = $goodslistArr.slice(20,28);
             $list_bot.map(function(item) {
                 let $imgsrc2 = item.img.slice(3);
-                str2+= `<li data-id=${item.id} class="lists"><img src="${$imgsrc2}"/></li>`;
+                str2+= `<li data-id=${item.id} class="list"><img src="${$imgsrc2}"/></li>`;
             }).join('\n');
             $('.c1f_b ul').html(str2);
             //设置商品点击事件,点击商品跳转详情页
-            $('#main').find('.lists').on('click',function(){
+            $('#main').find('.list').on('click',function(){
                 location.href = '../html/details.html?id=' + $(this).attr('data-id');
             });
             

@@ -1,0 +1,219 @@
+@charset "UTF-8";
+#main .main_nav {
+  display: block;
+  height: 54px;
+  line-height: 54px;
+  color: #666666;
+  font-size: 14px; }
+  #main .main_nav i {
+    font-size: 20px;
+    margin-right: 10px; }
+
+#main .main_l {
+  width: 210px;
+  min-height: 500px; }
+  #main .main_l ul .fenleiList {
+    width: 210px;
+    min-height: 32px;
+    background: #F5F5F5;
+    font-size: 14px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc; }
+    #main .main_l ul .fenleiList i {
+      margin-left: 10px;
+      color: #999; }
+    #main .main_l ul .fenleiList a {
+      color: #90C31F; }
+    #main .main_l ul .fenleiList ul {
+      display: none; }
+      #main .main_l ul .fenleiList ul li {
+        padding-left: 10px;
+        color: #929292;
+        background: #fff; }
+  #main .main_l .hotgoodsList {
+    padding: 0 5px; }
+    #main .main_l .hotgoodsList h2 {
+      display: block;
+      width: 200px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 30px;
+      color: #666666; }
+    #main .main_l .hotgoodsList li {
+      width: 200px;
+      height: 75px;
+      border-bottom: 1px dashed #ccc; }
+      #main .main_l .hotgoodsList li img {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px; }
+      #main .main_l .hotgoodsList li h3 {
+        font-size: 12px;
+        color: #666; }
+      #main .main_l .hotgoodsList li p {
+        color: #FF6600; }
+      #main .main_l .hotgoodsList li p:before {
+        content: '￥'; }
+
+#main .main_r {
+  width: 960px;
+  min-height: 500px; }
+  #main .main_r .main_r_t {
+    border: 1px solid #ccc; }
+    #main .main_r .main_r_t h2 {
+      font-size: 14px;
+      line-height: 36px;
+      text-indent: 1em;
+      width: 960px;
+      height: 36px;
+      background: #F5F5F5; }
+    #main .main_r .main_r_t ul {
+      color: #666; }
+      #main .main_r .main_r_t ul li {
+        box-sizing: border-box;
+        float: left;
+        height: 118px;
+        width: 238px;
+        padding: 10px; }
+        #main .main_r .main_r_t ul li img {
+          width: 90px;
+          height: 90px;
+          background: red;
+          float: left;
+          margin-right: 5px; }
+        #main .main_r .main_r_t ul li h3 {
+          margin-top: 10px;
+          font-size: 12px;
+          line-height: 20px; }
+        #main .main_r .main_r_t ul li p {
+          margin-top: 10px;
+          color: #FF6600; }
+        #main .main_r .main_r_t ul li p:before {
+          content: '￥'; }
+  #main .main_r .main_r_c {
+    font-size: 14px; }
+    #main .main_r .main_r_c h4 {
+      display: block;
+      height: 50px;
+      line-height: 50px; }
+    #main .main_r .main_r_c ul {
+      border: 1px solid #ccc;
+      border-bottom: 0; }
+      #main .main_r .main_r_c ul li {
+        color: #666;
+        height: 30px;
+        border-bottom: 1px solid #ccc;
+        font-size: 12px;
+        line-height: 30px; }
+        #main .main_r .main_r_c ul li span {
+          padding-left: 10px;
+          display: inline-block;
+          width: 88px;
+          height: 30px;
+          background: #F5F5F5; }
+        #main .main_r .main_r_c ul li a {
+          color: #666;
+          margin: 0 10px; }
+      #main .main_r .main_r_c ul li:nth-last-child(-n+2) {
+        display: none; }
+    #main .main_r .main_r_c div {
+      width: 84px;
+      height: 20px;
+      margin: -1px auto 0;
+      font-size: 12px;
+      color: #666;
+      border: 1px solid #ccc;
+      text-align: center;
+      border-top: 0;
+      line-height: 20px;
+      background: #fff; }
+  #main .main_r .main_r_b h2 {
+    font-size: 12px;
+    color: #666; }
+    #main .main_r .main_r_b h2 span {
+      display: inline-block;
+      padding: 5px 10px; }
+    #main .main_r .main_r_b h2 ul li {
+      float: left;
+      margin-right: 5px; }
+      #main .main_r .main_r_b h2 ul li span {
+        padding: 0;
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center; }
+      #main .main_r .main_r_b h2 ul li i {
+        display: block;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #ccc;
+        line-height: 22px;
+        text-align: center; }
+  #main .main_r .main_r_b .goodslist li {
+    float: left;
+    position: relative;
+    margin-right: 25px;
+    margin-bottom: 22px; }
+    #main .main_r .main_r_b .goodslist li div {
+      border: 1px solid #ccc;
+      width: 218px;
+      height: 350px; }
+      #main .main_r .main_r_b .goodslist li div img {
+        width: 218px;
+        height: 220px;
+        background: red; }
+      #main .main_r .main_r_b .goodslist li div span {
+        font-size: 20px;
+        color: #FF6600; }
+      #main .main_r .main_r_b .goodslist li div h2 {
+        font-size: 12px; }
+      #main .main_r .main_r_b .goodslist li div p {
+        font-size: 12px;
+        color: #333;
+        line-height: 36px; }
+      #main .main_r .main_r_b .goodslist li div h3 {
+        width: 2180px;
+        height: 32px;
+        background: url(../img/listxingxing.png) no-repeat; }
+    #main .main_r .main_r_b .goodslist li h4 {
+      display: none;
+      position: absolute;
+      border: 1px solid #ccc;
+      border-top: 0;
+      left: 0px;
+      top: 350px;
+      height: 32px;
+      width: 218px;
+      background: #fff; }
+      #main .main_r .main_r_b .goodslist li h4 span {
+        display: inline-block;
+        height: 20px;
+        width: auto;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        margin: 5px 28px 0 5px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        background: #FF6600;
+        border-radius: 4px; }
+        #main .main_r .main_r_b .goodslist li h4 span i {
+          margin-right: 5px; }
+      #main .main_r .main_r_b .goodslist li h4 span:nth-child(2) {
+        margin-right: 0;
+        border: 1px solid #FF6600;
+        background: #fff;
+        color: #FF6600; }
+  #main .main_r .main_r_b .goodslist li:hover {
+    box-sizing: border-box; }
+    #main .main_r .main_r_b .goodslist li:hover div {
+      box-shadow: 2px 2px 2px #ccc,-2px -2px 2px #ccc; }
+    #main .main_r .main_r_b .goodslist li:hover h4 {
+      display: block;
+      z-index: 200;
+      box-shadow: 2px 2px 2px #ccc,-2px 2px 2px #ccc; }
+  #main .main_r .main_r_b .goodslist li:nth-child(4n) {
+    margin-right: 0; }
