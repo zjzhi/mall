@@ -36,7 +36,7 @@ define(['jquery'],function($,html){
                                         <i class="fa fa-shopping-cart "></i>
                                         购物车
                                         
-                                        <span>0</span>
+                                        <span id="cartTotal">0</span>
                                         件
                                     </a>
                                 </li>

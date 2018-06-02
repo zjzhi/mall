@@ -419,7 +419,7 @@ define(['jquery'],function($,html){
                 </div>
                 <ul class="fl nav_top">
                     <li><a href="../index.html">首页</a></li>
-                    <li><a href="#">海外购</a></li>
+                    <li><a href="list.html">商品列表</a></li>
                     <li><a href="#">彩瞳</a></li>
                     <li><a href="#">隐形眼睛</a></li>
                     <li><a href="#">护理用品</a></li>

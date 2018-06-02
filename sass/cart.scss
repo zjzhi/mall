@@ -76,9 +76,53 @@
                         }
                     }
                 }
-
-                    
             }
+            .sumPrices{
+                    float:right;
+                    font-size:14px;
+                    line-height:24px;
+                    // width: 100%;
+                    color:#666;
+                    .prices{
+                        float:right;
+                        
+                        
+                        text-align:right;
+                    }
+                    span{
+                        color:#FF6600;
+                        display:inline-block;
+                        width: 70px;
+                        height: 24px;
+                    }
+                    span:before{
+                        content:'￥';
+
+                    }
+                    .pricesfenlei{
+                        display:inline-block;
+                        text-align:right;
+                        // float:right;
+                        width: 125px;
+                        height: 24px;
+                    }
+                    h2,h3,h4{
+                        display:block;
+                        width: 359px;
+                        height: 24px;
+
+                    }
+                    p{
+                        border-top:1px solid #ccc;
+                        height: 65px;
+                        button{
+                            width: 190px;
+                            height: 35px;
+                            background:#FF6600;
+                            color:#fff;
+                        }
+                    }
+                }
                 
         }
     }

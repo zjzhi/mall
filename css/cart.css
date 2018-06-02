@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #main .container {
   width: 998px; }
   #main .container .cartLogo {
@@ -51,3 +52,35 @@
           width: 162px; }
         #main .container div .cartList tbody tr td:nth-child(7) {
           width: 98px; }
+  #main .container div .sumPrices {
+    float: right;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666; }
+    #main .container div .sumPrices .prices {
+      float: right;
+      text-align: right; }
+    #main .container div .sumPrices span {
+      color: #FF6600;
+      display: inline-block;
+      width: 70px;
+      height: 24px; }
+    #main .container div .sumPrices span:before {
+      content: '￥'; }
+    #main .container div .sumPrices .pricesfenlei {
+      display: inline-block;
+      text-align: right;
+      width: 125px;
+      height: 24px; }
+    #main .container div .sumPrices h2, #main .container div .sumPrices h3, #main .container div .sumPrices h4 {
+      display: block;
+      width: 359px;
+      height: 24px; }
+    #main .container div .sumPrices p {
+      border-top: 1px solid #ccc;
+      height: 65px; }
+      #main .container div .sumPrices p button {
+        width: 190px;
+        height: 35px;
+        background: #FF6600;
+        color: #fff; }

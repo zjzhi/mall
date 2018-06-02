@@ -22,9 +22,7 @@ $row = $result -> fetch_all(MYSQLI_ASSOC);
     $sql2 ="UPDATE `buycar` SET `num`=$num WHERE id='$id'";
     //执行sql语句,查询结果
     $conn -> query($sql2);
-    echo '添加成功';
-    // 关闭数据库，避免资源浪费
-    $conn -> close();
+    
     
  }
 else{
@@ -60,10 +58,19 @@ else{
 
     //执行sql语句,查询结果
     $conn -> query($sql3);
-    echo '添加成功';
-    // 关闭数据库，避免资源浪费
-    $conn -> close();
+    
     }
     
 }
+$sqlAll = "SELECT * FROM `buycar` WHERE 1";
+//执行sql语句,查询结果
+$resultAll = $conn -> query($sqlAll);
+
+$rowAll = $resultAll -> fetch_all(MYSQLI_ASSOC);
+$strAll = json_encode($rowAll);
+echo $strAll;
+
+// 关闭数据库，避免资源浪费
+    $conn -> close();
+
 ?>

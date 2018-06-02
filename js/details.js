@@ -91,14 +91,15 @@
                $(this).next('span').text($tx);
             })
 
-
+            let $carlistArr = [];
             //设置点击按钮加入购物车
             $('.addToCart').on('click',function(){
+                
                 let $zuoyanNum = $('.zuoyanNum').text();
                 let $youyanNum = $('.youyanNum').text();
                 let $zuoyanG =$('lab_l').text();
                 let $youyanG =$('lab_r').text();
-                console.log($zuoyanG);
+                
                 $.ajax({
                     type:"get",
                     url: "http://localhost:868/src/api/add.php",
@@ -109,7 +110,9 @@
                         num :$zuoyanNum
                     },
                     success: function(data) {
-                        console.log(data);
+                        //点击添加后，重新更新top栏购物车商品数量
+                        $carlistArr = $.parseJSON(data);
+                        $('#cartTotal').text($carlistArr.length);
                     }
                 });
                 var body = document.getElementsByTagName('body')[0];
@@ -126,7 +129,7 @@
                 
                 animate(flyImg,{left:900,top:20,width:0,height:0},function(){
                     body.removeChild(flyImg); 
-
+                    
                 });
             });
         }
