@@ -88,6 +88,32 @@
             $('#main').find('.lists').on('click',function(){
                 location.href = '../html/details.html?id=' + $(this).attr('list-id');
             });
+            //点击价格排序
+            $('.byprice').on('click',function(){
+                if($(this).find('i').prop('class')=='fa fa-arrow-down'){
+                    $(this).find('i').prop({'class':'fa fa-arrow-up'})
+                    ready($('.goodslist'),$goodslistArr.sort(function(obj1,obj2){
+                            return obj1.sale-obj2.sale;
+                        }),0,12);
+                    //点击商品跳转详情页
+                    $('#main').find('.lists').on('click',function(){
+                        location.href = '../html/details.html?id=' + $(this).attr('list-id');
+                    }); 
+                }
+                else{
+                     $(this).find('i').prop({'class':'fa fa-arrow-down'})
+                    ready($('.goodslist'),$goodslistArr.sort(function(obj1,obj2){
+                            return obj2.sale-obj1.sale;
+                        }),0,12);
+                    //点击商品跳转详情页
+                    $('#main').find('.lists').on('click',function(){
+                        location.href = '../html/details.html?id=' + $(this).attr('list-id');
+                    }); 
+                }
+                
+                
+
+            });
 
         }
     });

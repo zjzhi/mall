@@ -177,6 +177,7 @@
     autoPlay: true, //是否自动播放 true / false 
     direction: "left", //滚动方向right / left
     });
+    
     //设置轮播图点击
     $(".ban_c").hover(function() {
             $(".carousel-prev,.carousel-next").fadeIn(300);
@@ -262,6 +263,15 @@
                 str2+= `<li data-id=${item.id} class="list"><img src="${$imgsrc2}"/></li>`;
             }).join('\n');
             $('.c1f_b ul').html(str2);
+            console.log($goodslistArr)
+            //设置4f的商品
+            let str3='';
+            let $list_4f = $goodslistArr.slice(28,36);
+            $list_4f.map(function(item) {
+                let $imgsrc3 = item.img.slice(3);
+                str3+= `<li data-id=${item.id} class="list"><img src="${$imgsrc3}"/></li>`;
+            }).join('\n');
+            $('.c4f_scond_b ul').html(str3);
             //设置商品点击事件,点击商品跳转详情页
             $('#main').find('.list').on('click',function(){
                 location.href = '../html/details.html?id=' + $(this).attr('data-id');

@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin:*');
 require('link.php');
 $uname=isset($_GET["uname"])?$_GET["uname"]:null;
 $upassword=isset($_GET["upassword"])?$_GET["upassword"]:null;

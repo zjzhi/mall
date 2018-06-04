@@ -1,4 +1,5 @@
 <?php
+    header('Access-Control-Allow-Origin:*');
     require('link.php');
     $sql1 = "SELECT * FROM `zgoodslist` WHERE 1";
     //执行sql语句,查询结果

@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin:*');
 require('link.php');
 
 $id =isset($_GET["id"])?$_GET["id"]:null;

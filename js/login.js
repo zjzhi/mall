@@ -1,4 +1,8 @@
 ;requirejs(['jquery','base'],function(){
+      //点击跳转首页
+      $('.loginImg').on('click',function(){
+        location.href = '../index.html';
+      })
         //点击切换登录页
       $('#foodter img').attr({'src':'../img/nfot-bg-03.gif'});
       $('.denglu').on('click',function(){
